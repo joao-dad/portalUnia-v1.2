@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/unia-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PNU - Contacto</title>
+
+    <style>
+        /*Contacto*/
+ .geral{
+    width: 100%;
+    height: auto;
+    margin: 15px;
+ }
+ .contacto {
+    width: 100%;
+    padding: 20px;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .contacto h1 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+    label {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+  }
+
+  .cont-form input,
+  .cont-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  .cont-form input:focus{
+    border-color: #195b93;
+  }
+  .cont-form textarea:focus{
+    border-color: #195b93;
+  }
+
+  .cont-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #195b93;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cont-form button:hover {
+    background-color: #1c7ed3;
+  }
+
+    select, input {
+      width: 100%;
+      padding: 10px;
+      font-size: 13px;
+      color: #000000bd;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    select:focus, input:focus {
+      border-color: #195b93;
+      outline: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .geral{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .contacto{
+            width: 100%;
+        }
+        .contacto h1{
+            font-size: 17px;
+        }
+        .cont-form{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .cont-form label{
+            font-size: 13px;
+        }
+        .cont-form input,
+        .cont-form textarea{
+            font-size: 11px;
+        }
+        select, input{
+            font-size: 11px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+                <!-- menu -->
+    <header class="header">
+        <div class="log">
+            <a href="index.html">
+           <img src="img/unia-logo.png" alt="logo-unia" class="logo">
+           <p class="txt">Portal de Notícias UnIA</p>
+           </a>
+       </div>
+       <div class="pub">
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide"><img src="./img/image0.png" alt="Imagem 1"></div>
+                <div class="carousel-slide"><img src="./img/image1aa.png" alt="Imagem 2"></div>
+                <div class="carousel-slide"><img src="./img/image1a.png" alt="Imagem 3"></div>
+                <div class="carousel-slide"><img src="./img/image1.png" alt="Imagem 4"></div>
+                <div class="carousel-slide"><img src="./img/image2.png" alt="Imagem 5"></div>
+
+            </div>  
+       </div>
+       <div class="carrossel-indicators" id="carrossel-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+       </div>
+       
+    </header>
+
+    <nav class="navBar">
+        <ul class="menu">
+                <li class="iten"><a href="index.html" class="nav-list">Início</a></li>
+                <li class="iten"><a href="" class="nav-list">Multimédia</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="radio.html">Rádio UnIA</a></li>
+                    </ul>
+                </li>
+                <li class="iten"><a href="sobre.html" class="nav-list">Quem somos</a></li>
+                <li class="iten"><a href="contacto.html" class="nav-list">Contacto</a></li>
+                <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-list">Secretaria</a></li>
+                <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-list"><span class="material-icons">person</span>Iniciar Sessão</a></li>
+        </ul>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav> 
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="iten"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="iten"><a href="videos.html" class="nav-link">Vídeos</a></li>
+            <li class="iten"><a href="radio.html" class="nav-link">Rádio UnIA</a></li>
+            <li class="iten"><a href="sobre.html" class="nav-link">Quem somos</a></li>
+            <li class="iten"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-link">Secretaria</a></li>
+            <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-link" id="entrar"><span class="material-icons">person</span>Iniciar Sessão</a></li>
+    </ul>
+    </div>
+
+    <!-- formulário -->
+    <div class="geral">
+
+        <div class="contacto">
+                    
+            <h1>Saudações academicas! Ficaremos felizes em ajuda-lo naquilo que puder.</h1>
+
+            <form class="cont-form">
+            <label>Nome</label>
+            <input type="text" name="Nome" placeholder="Digite o seu Nome" required>
+            
+            <div class="form-container">
+                <label for="tipo">Você é:</label>
+                <select id="tipo" name="tipo" onchange="mostrarCampos()">
+                <option value="">Selecione uma opção</option>
+                <option value="estudante">Estudante</option>
+                <option value="visitante">Visitante</option>
+                </select>
+            
+                <div id="campos-estudante" class="hidden">
+
+                    <label>Nº Estudante</label>
+                    <input type="number" name="num_estudante" placeholder="Nº estudante" required>
+
+                    <label for="faculdade">Faculdade</label>
+                    <select id="faculdade" name="faculdade" required>
+                    <option value="">Selecionar</option>
+                    <option value="FBA">Faculdade de Belas Artes</option>
+                    <option value="FCS">Faculdade de Ciências Sociais</option>
+                    <option value="FCET">Faculdade de Ciências de Engenharia e Tecnologia</option>
+                    <option value="FD">Faculdade de Direito</option>
+                    <option value="FEG">Faculdade de Economia e Gestão</option>
+                    </select>
+
+                    <label for="curso">Curso</label>
+                    <select id="curso" name="curso" required>
+                    <option value="">Selecionar</option>
+                    <option value="ALA">Administração Local e Autárquica</option>
+                    <option value="AU">Arquitectura e Urbanismo</option>
+                    <option value="CC">Ciências da Comunicação</option>
+                    <option value="CA">Contabilidade e Auditoria</option>
+                    <option value="C">Cinema</option>
+                    <option value="D">Design</option>
+                    <option value="Dir">Direito</option>
+                    <option value="Eco">Economia</option>
+                    <option value="EC">Engenharia Civil</option>
+                    <option value="ERNA">Engenharia dos Recursos Naturais e Ambiente</option>
+                    <option value="EET">Engenharia Electrotécnica e Telecomunicações</option>
+                    <option value="EGI">Engenharia e Gestão Industrial</option>
+                    <option value="EI">Engenharia Informática</option>
+                    <option value="FC">Finanças e Contabilidade</option>
+                    <option value="GM">Gestão e Marketing</option>
+                    <option value="GRH">Gestão de Recursos Humanos</option>
+                    <option value="IGE">Informática de Gestão de Empresas</option>
+                    <option value="PLLP">Portugês e Literatura em Límgua Portuguesa</option>
+                    <option value="Psic">Psicologia</option>
+                    <option value="RI">Relações Internacionais</option>
+                    <option value="Soc">Sociologia</option>
+                    <option value="TGH">Turismo e Gestão Hoteleira</option>
+                    </select>
+
+                </div>
+            
+                <div id="campos-visitante" class="hidden">
+
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+            
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                </div>
+            </div>
+
+
+            <label>Diga</label>
+            <textarea name="mensagem" id="" rows="5" placeholder="Deixe a sua mensagem" required></textarea>
+
+            <button>Enviar</button>
+            </form>   
+        </div>
+    </div>
+
+<!-- Rodapé -->
+<footer>
+    
+    <div class="inf">
+        <ul class="local">
+            <h3>Localização</h3>
+            <li style="font-weight: bold;">Universidade Independente de Angola</li>
+            <li>Rua da Missão, Morro Bento II Luanda - Angola</li>
+        </ul>
+        <ul class="cont">
+            <h3>Contactos</h3>
+            <li><span class="material-icons">phone</span> (244) 930 225 361 / 997 904 796</li>
+            <li><span class="material-icons">mail</span> secretariavirtual@si.unia.ao</li>
+        </ul>
+        <ul class="hora">
+            <h3>Horários de Antendimento</h3>
+            <li>Segunda a Sexta-feira: 08:00 - 20:00</li>
+            <li>Sábado: 08:00 - 12:00</li>
+        </ul>
+    </div>
+    
+    <div class="red">
+        <a href="#"><img src="./img/f.png" alt="fb"></a>
+        <a href="#"><img src="./img/ins.png" alt="insta"></a>
+    </div>
+    <p class="dir">&COPY;2025 Portal de Notícias UnIA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>

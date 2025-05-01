@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/unia-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PNU - Sobre</title>
+
+    <style>
+        /*Sobre*/
+
+.sobre-container {
+  display: flex;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.sobre-descricao h1 {
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sobre-descricao p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+.criador {
+  text-align: center;
+}
+
+.criador h1 {
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.imagem-feed {
+  width: 300px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.596);
+
+}
+
+.criador p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.criador a{
+  color: #333;
+}
+.imagem-feed.zoom{
+        transform: scale(1.2);
+        z-index: 10;
+    }
+
+@media screen and (max-width: 768px) {
+  .sobre-container{
+    flex-direction: column;
+  }
+  .sobre-descricao{
+    margin-bottom: 20px;
+  }
+  .sobre-descricao h1{
+    font-size: 20px;
+  }
+  .sobre-container p{
+    font-size: 13px;
+  }
+  .criador h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .criador p{
+    font-size: 13px;
+  }
+}
+    </style>
+</head>
+
+<body>
+                <!-- menu -->
+    <header class="header">
+        <div class="log">
+            <a href="index.html">
+           <img src="img/unia-logo.png" alt="logo-unia" class="logo">
+           <p class="txt">Portal de Notícias UnIA</p>
+           </a>
+       </div>
+       <div class="pub">
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide"><img src="./img/image0.png" alt="Imagem 1"></div>
+                <div class="carousel-slide"><img src="./img/image1aa.png" alt="Imagem 2"></div>
+                <div class="carousel-slide"><img src="./img/image1a.png" alt="Imagem 3"></div>
+                <div class="carousel-slide"><img src="./img/image1.png" alt="Imagem 4"></div>
+                <div class="carousel-slide"><img src="./img/image2.png" alt="Imagem 5"></div>
+
+            </div>  
+       </div>
+       <div class="carrossel-indicators" id="carrossel-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+       </div>
+       
+    </header>
+
+    <nav class="navBar">
+        <ul class="menu">
+                <li class="iten"><a href="index.html" class="nav-list">Início</a></li>
+                <li class="iten"><a href="" class="nav-list">Multimédia</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="radio.html">Rádio UnIA</a></li>
+                    </ul>
+                </li>
+                <li class="iten"><a href="sobre.html" class="nav-list">Quem somos</a></li>
+                <li class="iten"><a href="contacto.html" class="nav-list">Contacto</a></li>
+                <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-list">Secretaria</a></li>
+                <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-list"><span class="material-icons">person</span>Iniciar Sessão</a></li>
+        </ul>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav> 
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="iten"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="iten"><a href="videos.html" class="nav-link">Vídeos</a></li>
+            <li class="iten"><a href="radio.html" class="nav-link">Rádio UnIA</a></li>
+            <li class="iten"><a href="sobre.html" class="nav-link">Quem somos</a></li>
+            <li class="iten"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-link">Secretaria</a></li>
+            <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-link" id="entrar"><span class="material-icons">person</span>Iniciar Sessão</a></li>
+    </ul>
+    </div>
+
+    <section class="sobre-container">
+        <div class="sobre-descricao">
+          <h1>Portal de Notícias UnIA</h1>
+          <p>
+            O <strong>"É Actual"</strong> é um portal de notícias dedicado a trazer informações
+            atualizadas, relevantes e diversificadas sobre política, desporto,
+            cultura, sociedade, entretenimento e acontecimentos globais. Nossa missão
+            é informar de forma imparcial e precisa, conectando nossos leitores ao
+            que acontece no mundo.
+          </p>
+        </div>
+      
+        <div class="criador">
+          <h1>Sobre o Criador</h1>
+          <img src="./img/aluns.jpg" alt="Foto do criador do site" class="imagem-feed" onclick="this.classList.toggle('zoom')" >
+          <p>
+            Este site foi criado e desenvolvido por <strong>João Silva</strong>, Desenvolvedor Web, apaixonado por conectar pessoas às informações mais
+            importantes do dia a dia. Com ampla experiência no setor digital e um
+            olhar atento às tendências globais, João criou este portal com o
+            propósito de entregar notícias de qualidade e integridade. <a href="https://www.linkedin.com/in/joão-card-silva" target="_blank">Saber mais sobre o Criador...</a>
+          </p>
+        </div>
+      </section>
+
+   <!-- Rodapé -->
+  <footer>
+    
+    <div class="inf">
+        <ul class="local">
+            <h3>Localização</h3>
+            <li style="font-weight: bold;">Universidade Independente de Angola</li>
+            <li>Rua da Missão, Morro Bento II Luanda - Angola</li>
+        </ul>
+        <ul class="cont">
+            <h3>Contactos</h3>
+            <li><span class="material-icons">phone</span> (244) 930 225 361 / 997 904 796</li>
+            <li><span class="material-icons">mail</span> secretariavirtual@si.unia.ao</li>
+        </ul>
+        <ul class="hora">
+            <h3>Horários de Antendimento</h3>
+            <li>Segunda a Sexta-feira: 08:00 - 20:00</li>
+            <li>Sábado: 08:00 - 12:00</li>
+        </ul>
+    </div>
+    
+    <div class="red">
+        <a href="#"><img src="./img/f.png" alt="fb"></a>
+        <a href="#"><img src="./img/ins.png" alt="insta"></a>
+    </div>
+    <p class="dir">&COPY;2025 Portal de Notícias UnIA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>

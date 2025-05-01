@@ -1,0 +1,183 @@
+ 
+*{
+  font-family: Century Gothic;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: #ffffff;
+    color: #4b4b4b;
+}    
+
+/* Nemu */
+
+nav img { 
+    padding: 2px 0 0 30px;
+    width: 130px;
+    float: left;
+}
+
+header nav { 
+    min-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0px 1px 1px #cec9c9;
+    background-color: #012060;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul { 
+    margin-top: 0;
+    padding-right: 20px;
+    float: right;
+    
+    font-family: Century Gothic;
+}
+
+nav li { 
+    display: block;
+    list-style: none;
+    float: left;
+    padding: 10px ;
+    font-size: 15px;
+}
+
+nav ul a { 
+    color: #ffffff;
+}
+
+nav ul a :hover { 
+    font-weight: 600;
+    border-top: 1px solid yellow;
+}
+
+
+.corpo {
+    width: 100%;
+    min-width: 900px;
+    margin: 0 auto;
+   
+}
+
+ /*Contacto*/
+ .contacto {
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contacto h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .cont-form label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+  }
+
+  .cont-form input,
+  .cont-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .cont-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cont-form button:hover {
+    background-color: #0056b3;
+  }
+
+
+/*Sobre*/
+
+.sobre-container {
+  display: flex;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.sobre-descricao h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sobre-descricao p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+.criador {
+  text-align: center;
+}
+
+.criador h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.criador-foto {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.596);
+
+}
+
+.criador p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.criador a{
+  color: #333;
+}
+
+hr{
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+ footer p{
+    margin-top: 20px;
+   text-align: center; 
+   
+}

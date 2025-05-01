@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/unia-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>P.N.U - Rádio UnIA</title>
+
+    <style>
+        .geral{
+            width: 100%;
+            background-color: aliceblue;
+        }
+        h1{
+            text-align: center;
+            padding: 10px;
+            color: #444;
+            font-size: 30px;
+        }
+        .audio-container figcaption{
+            margin: 10px;
+            font-weight: bold;
+            color: #555;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .audio-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .box{
+            width: 30%;
+            border: 1px solid #55555525;
+            margin: 5px;
+            box-shadow: 0px 15px 15px #cec9c9;
+        }
+        .box p{
+            text-align: justify;
+            font-size: 12px;
+            margin: 4px;
+            color: #555;
+        }
+        audio{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .audio-container{
+                display: flex;
+                flex-direction: column;
+            }
+            .audio-container figcaption{
+                font-size: 14px;
+            }
+            .box p{
+                font-size: 11px;
+            }
+            .box{
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                
+            }
+            h1{
+                font-size: 20px;
+            }
+            audio{
+                width: 250px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+                <!-- menu -->
+    <header class="header">
+        <div class="log">
+            <a href="index.html">
+           <img src="img/unia-logo.png" alt="logo-unia" class="logo">
+           <p class="txt">Portal de Notícias UnIA</p>
+           </a>
+       </div>
+       <div class="pub">
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide"><img src="./img/image0.png" alt="Imagem 1"></div>
+                <div class="carousel-slide"><img src="./img/image1aa.png" alt="Imagem 2"></div>
+                <div class="carousel-slide"><img src="./img/image1a.png" alt="Imagem 3"></div>
+                <div class="carousel-slide"><img src="./img/image1.png" alt="Imagem 4"></div>
+                <div class="carousel-slide"><img src="./img/image2.png" alt="Imagem 5"></div>
+
+            </div>  
+       </div>
+       <div class="carrossel-indicators" id="carrossel-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+       </div>
+       
+    </header>
+
+    <nav class="navBar">
+        <ul class="menu">
+                <li class="iten"><a href="index.html" class="nav-list">Início</a></li>
+                <li class="iten"><a href="" class="nav-list">Multimédia</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="radio.html">Rádio UnIA</a></li>
+                    </ul>
+                </li>
+                <li class="iten"><a href="sobre.html" class="nav-list">Quem somos</a></li>
+                <li class="iten"><a href="contacto.html" class="nav-list">Contacto</a></li>
+                <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-list">Secretaria</a></li>
+                <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-list"><span class="material-icons">person</span>Iniciar Sessão</a></li>
+        </ul>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav> 
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="iten"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="iten"><a href="videos.html" class="nav-link">Vídeos</a></li>
+            <li class="iten"><a href="radio.html" class="nav-link">Rádio UnIA</a></li>
+            <li class="iten"><a href="sobre.html" class="nav-link">Quem somos</a></li>
+            <li class="iten"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-link">Secretaria</a></li>
+            <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-link" id="entrar"><span class="material-icons">person</span>Iniciar Sessão</a></li>
+    </ul>
+    </div>
+    
+    <div class="geral">
+
+        <h1>Rádio UnIA</h1>
+
+       <!-- audios -->
+       <div class="audio-container">
+            <div class="box">
+                <figure class="audio">
+                    <figcaption>Mix da Tarde</figcaption>
+                    <audio controls>
+                        <source src="audio/Landrick  Já Quero  VÍDEO OFICIAL.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam earum accusamus, incidunt nulla veritatis mollitia dolorem totam nesciunt asperiores, voluptatibus</p>
+            </div>
+            <div class="box">
+                <figure class="audio">
+                    <figcaption>Ola</figcaption>
+                    <audio controls>
+                        <source src="audio/Landrick  Já Quero  VÍDEO OFICIAL.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>musica de landrick</p>
+            </div>
+            <div class="box">
+                <figure class="audio">
+                    <figcaption>Ola</figcaption>
+                    <audio controls>
+                        <source src="audio/Landrick  Já Quero  VÍDEO OFICIAL.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>musica de landrick</p>
+            </div>
+            <div class="box">
+                <figure class="audio">
+                    <figcaption>Ola</figcaption>
+                    <audio controls>
+                        <source src="audio/Landrick  Já Quero  VÍDEO OFICIAL.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>musica de landrick</p>
+            </div>
+        </div>
+       <div class="audio-container">
+            <div class="box">
+                <figure class="audio">
+                    <figcaption>Mix da Tarde</figcaption>
+                    <audio controls>
+                        <source src="audio/Landrick  Já Quero  VÍDEO OFICIAL.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam earum accusamus, incidunt nulla veritatis mollitia dolorem totam nesciunt asperiores, voluptatibus</p>
+            </div>
+            <div class="box">
+                <figure class="audio">
+                    <figcaption>Ola</figcaption>
+                    <audio controls>
+                        <source src="audio/Landrick  Já Quero  VÍDEO OFICIAL.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>musica de landrick</p>
+            </div>
+            <div class="box">
+                <figure class="audio">
+                    <figcaption>Ola</figcaption>
+                    <audio controls>
+                        <source src="audio/Landrick  Já Quero  VÍDEO OFICIAL.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>musica de landrick</p>
+            </div>
+        </div>
+       
+    </div>
+     <!-- Rodapé -->
+  <footer>
+    
+    <div class="inf">
+        <ul class="local">
+            <h3>Localização</h3>
+            <li style="font-weight: bold;">Universidade Independente de Angola</li>
+            <li>Rua da Missão, Morro Bento II Luanda - Angola</li>
+        </ul>
+        <ul class="cont">
+            <h3>Contactos</h3>
+            <li><span class="material-icons">phone</span> (244) 930 225 361 / 997 904 796</li>
+            <li><span class="material-icons">mail</span> secretariavirtual@si.unia.ao</li>
+        </ul>
+        <ul class="hora">
+            <h3>Horários de Antendimento</h3>
+            <li>Segunda a Sexta-feira: 08:00 - 20:00</li>
+            <li>Sábado: 08:00 - 12:00</li>
+        </ul>
+    </div>
+    
+    <div class="red">
+        <a href="#"><img src="./img/f.png" alt="fb"></a>
+        <a href="#"><img src="./img/ins.png" alt="insta"></a>
+    </div>
+    <p class="dir">&COPY;2025 Portal de Notícias UnIA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>
