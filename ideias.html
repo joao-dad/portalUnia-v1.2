@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/unia-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PNU - Ideias UnIA</title>
+
+    <style>
+
+    .filter-bar {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .filter-btn {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 5px 16px;
+      margin: 5px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background 0.2s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background-color: #2980b9;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    .card img.main {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .stars {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .stars span.active {
+      color: #f39c12;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid #eee;
+      padding-top: 12px;
+    }
+
+    .author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .author-info {
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .author-info small {
+      color: #888;
+      display: block;
+      margin-top: 3px;
+    }
+
+    @media (max-width: 768px) {
+    .principal{
+        background-color: white;
+        margin-top: 10px;
+    }
+    .grid-container{
+        width: 90%;
+    }
+    .filter-btn{
+        padding: 5px 10px;
+    }
+
+      .card img.main {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+                <!-- menu -->
+    <header class="header">
+        <div class="log">
+            <a href="principal.html">
+           <img src="img/unia-logo.png" alt="logo-unia" class="logo">
+           <p class="txt">Portal de Notícias UnIA</p>
+           </a>
+       </div>
+       <div class="pub">
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide"><img src="./img/image0.png" alt="Imagem 1"></div>
+                <div class="carousel-slide"><img src="./img/image1aa.png" alt="Imagem 2"></div>
+                <div class="carousel-slide"><img src="./img/image1a.png" alt="Imagem 3"></div>
+                <div class="carousel-slide"><img src="./img/image1.png" alt="Imagem 4"></div>
+                <div class="carousel-slide"><img src="./img/image2.png" alt="Imagem 5"></div>
+
+            </div>  
+       </div>
+       <div class="carrossel-indicators" id="carrossel-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+       </div>
+       
+    </header>
+
+    <nav class="navBar">
+        <ul class="menu">
+                <li class="iten"><a href="principal.html" class="nav-list">Início</a></li>
+                <li class="iten"><a href="" class="nav-list">Multimédia</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="radio.html">Rádio UnIA</a></li>
+                    </ul>
+                </li>
+                <li class="iten"><a href="sobre.html" class="nav-list">Quem somos</a></li>
+                <li class="iten"><a href="contacto.html" class="nav-list">Fala UnIA</a></li>
+                <li class="iten"><a href="ideias.html" class="nav-list">Ideias unia</a></li>
+                <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-list">Secretaria</a></li>
+               <!--   <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-list"><span class="material-icons">person</span>Iniciar Sessão</a></li>-->
+        </ul>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav> 
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="iten"><a href="principal.html" class="nav-link">Início</a></li>
+            <li class="iten"><a href="videos.html" class="nav-link">Vídeos</a></li>
+            <li class="iten"><a href="radio.html" class="nav-link">Rádio UnIA</a></li>
+            <li class="iten"><a href="sobre.html" class="nav-link">Quem somos</a></li>
+            <li class="iten"><a href="contacto.html" class="nav-link">Fala UnIA</a></li>
+            <li class="iten"><a href="ideias.html" class="nav-link">Ideias unia</a></li>
+            <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-link">Secretaria</a></li>
+           <!--   <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-link" id="entrar"><span class="material-icons">person</span>Iniciar Sessão</a></li>-->
+    </ul>
+    </div>
+
+    <div class="principal">
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filtrar('todos')">Todos</button>
+    <button class="filter-btn" onclick="filtrar('projeto')">Projetos</button>
+    <button class="filter-btn" onclick="filtrar('artigo')">Artigos</button>
+    <button class="filter-btn" onclick="filtrar('livro')">Livros</button>
+  </div>
+
+  <div class="grid-container">
+
+    <!-- Projeto de estudante -->
+    <div class="card" data-tipo="projeto">
+      <img src="./img/Macbook-Air- (1).png" alt="Imagem do projeto" class="main">
+      <div class="card-content">
+        <div class="title">Sistema de Biblioteca Inteligente</div>
+        <div class="description">
+          Um sistema automatizado com RFID para empréstimo de livros na biblioteca da universidade.
+        </div>
+        <div class="stars" onclick="avaliarProjeto(event)">
+          ★ ★ ★ ★ ★
+        </div>
+        <div class="author">
+          <img src="./img/chab.webp" alt="Foto do autor">
+          <div class="author-info">
+            <strong>Maria João</strong><br>
+            Engenharia Informática, 3º ano
+            <small>Email: maria.joao@gmail.com</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artigo de professor -->
+    <div class="card" data-tipo="artigo">
+      <img src="./img/crime.jpg" alt="Imagem do artigo" class="main">
+      <div class="card-content">
+        <div class="title">Educação Digital na África</div>
+        <div class="description">
+          Discussão crítica sobre a implementação e impacto do ensino digital nas universidades africanas.
+        </div>
+        <div class="stars" onclick="avaliarProjeto(event)">
+          ★ ★ ★ ★ ★
+        </div>
+        <div class="author">
+          <img src="./img/chab.webp" alt="Foto do professor">
+          <div class="author-info">
+            <strong>Dr. António Lopes</strong><br>
+            Doutor em Tecnologia Educacional<br>
+            Coordenador de Pesquisa Acadêmica
+            <small>Email: antonio.lopes@gmail.com</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Livro de estudante -->
+    <div class="card" data-tipo="livro">
+      <img src="./img/ed.webp" alt="Imagem do livro" class="main">
+      <div class="card-content">
+        <div class="title">Introdução ao Pensamento Crítico</div>
+        <div class="description">
+          Uma abordagem prática e reflexiva sobre lógica e argumentação, voltada a universitários.
+        </div>
+        <div class="stars" onclick="avaliarProjeto(event)">
+          ★ ★ ★ ★ ★
+        </div>
+        <div class="author">
+          <img src="./img/chab.webp" alt="Foto do autor">
+          <div class="author-info">
+            <strong>Carlos Tomás</strong><br>
+            Filosofia, 4º ano
+            <small>Email: carlos.tomas@gmail.com</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Livro de professor -->
+    <div class="card" data-tipo="livro">
+      <img src="./img/tilapia-1536x1097-1.jpg" alt="Imagem do livro" class="main">
+      <div class="card-content">
+        <div class="title">Políticas Públicas e Desenvolvimento</div>
+        <div class="description">
+          Análise do papel das políticas públicas na transformação econômica das nações africanas.
+        </div>
+        <div class="stars" onclick="avaliarProjeto(event)">
+          ★ ★ ★ ★ ★
+        </div>
+        <div class="author">
+          <img src="./img/chab.webp" alt="Foto do autor">
+          <div class="author-info">
+            <strong>Prof.ª Ana Neves</strong><br>
+            Mestre em Administração Pública<br>
+            Diretora de Ciências Sociais
+            <small>Email: ana.neves@gmail.com</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Rodapé -->
+<footer>
+    
+    <div class="inf">
+        <ul class="local">
+            <h3>Localização</h3>
+            <li style="font-weight: bold;">Universidade Independente de Angola</li>
+            <li>Rua da Missão, Morro Bento II Luanda - Angola</li>
+        </ul>
+        <ul class="cont">
+            <h3>Contactos</h3>
+            <li><span class="material-icons">phone</span> (244) 930 225 361 / 997 904 796</li>
+            <li><span class="material-icons">mail</span> secretariavirtual@si.unia.ao</li>
+        </ul>
+        <ul class="hora">
+            <h3>Horários de Antendimento</h3>
+            <li>Segunda a Sexta-feira: 08:00 - 20:00</li>
+            <li>Sábado: 08:00 - 12:00</li>
+        </ul>
+    </div>
+    
+    <div class="red">
+        <a href="#"><img src="./img/f.png" alt="fb"></a>
+        <a href="#"><img src="./img/ins.png" alt="insta"></a>
+    </div>
+    <p class="dir">&COPY;2025 Portal de Notícias UnIA. Todos os direitos reservados.</p>
+    </footer>
+
+  <script>
+    function avaliarProjeto(event) {
+      const starsContainer = event.currentTarget;
+      const x = event.offsetX;
+      const width = starsContainer.offsetWidth;
+      const stars = Math.ceil((x / width) * 5);
+
+      starsContainer.innerHTML = '';
+      for (let i = 1; i <= 5; i++) {
+        const span = document.createElement('span');
+        span.textContent = '★';
+        span.className = i <= stars ? 'active' : '';
+        starsContainer.appendChild(span);
+      }
+    }
+
+    function filtrar(tipo) {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const tipoCard = card.getAttribute('data-tipo');
+        if (tipo === 'todos' || tipoCard === tipo) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Atualizar botão ativo
+      const btns = document.querySelectorAll('.filter-btn');
+      btns.forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.filter-btn[onclick*="${tipo}"]`).classList.add('active');
+    }
+  </script>
+
+  <script src="./Js/script.js"></script>
+</body>
+</html>

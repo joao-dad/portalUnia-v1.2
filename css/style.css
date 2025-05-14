@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+  body, p {
+      font-family: 'Roboto', sans-serif;
+    }
+        h1, h2, h3 {
+      font-family: 'Merriweather Sans', sans-serif;
+    }
 html, body {
     height: 100%;
     color: #4b4b4b;
     background-color: aliceblue;
-    font-family: sans-serif;
 }
 body{
     display: flex;
@@ -474,20 +479,28 @@ hr{
 .botoes-acoes {
     width: 100%;
     display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
 }
 
 .botoes-acoes button {
+    height: 36px;
     background-color: #f5f5f5;
     border: 1px solid #ccc;
-    padding: 5px 10px;
+    padding: 6px 10px;
     font-size: 12px;
     border-radius: 0;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s;
+    gap: 4px;
+    white-space: nowrap; /* impede quebra de linha */
+    flex: 1;
+    line-height: 1;
 }
+
+.botoes-acoes .btn-curtir .label-curtidas { /* Oculta só o texto "Curtidas" em telas menores */
+    display: inline;
+  }
 
 .botoes-acoes button:hover {
     background-color: #e0e0e0;
@@ -505,6 +518,7 @@ hr{
     border-radius: 6px;
     margin-bottom: 10px;
     font-size: 12px;
+    font-weight: bold;
 }
 .caixa-comentario {
     margin-top: 15px;
@@ -596,14 +610,17 @@ hr{
     .botoes-acoes{
         width: 90%;
         margin: 0 auto;
-        flex-wrap: nowrap;
         gap: 5px;
     }
     .botoes-acoes button{
-        width: 100%;
-        padding: 0;
         font-size: 11px;
+        height: 30px;
+        padding: 4px 6px;
     }
+    .botoes-acoes .btn-curtir .label-curtidas {
+        display: none;
+      }
+    
     .noticia-feed time{
         font-size: 10px;
     }
@@ -611,6 +628,7 @@ hr{
 
     /*Footer*/
 footer{
+    bottom: 0;
     background-color: #111523;
     color: white;
     padding: 50px 25px;

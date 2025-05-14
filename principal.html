@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/unia-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portal UnIA</title>
+</head>
+
+<body>
+                <!-- menu -->
+    <header class="header">
+        <div class="log">
+            <a href="principal.html">
+           <img src="img/unia-logo.png" alt="logo-unia" class="logo">
+           <p class="txt">Portal de Notícias UnIA</p>
+           </a>
+       </div>
+       <div class="pub">
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide"><img src="./img/image0.png" alt="Imagem 1"></div>
+                <div class="carousel-slide"><img src="./img/image1aa.png" alt="Imagem 2"></div>
+                <div class="carousel-slide"><img src="./img/image1a.png" alt="Imagem 3"></div>
+                <div class="carousel-slide"><img src="./img/image1.png" alt="Imagem 4"></div>
+                <div class="carousel-slide"><img src="./img/image2.png" alt="Imagem 5"></div>
+
+            </div>  
+       </div>
+       <div class="carrossel-indicators" id="carrossel-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+       </div>
+       
+    </header>
+
+    <nav class="navBar">
+        <ul class="menu">
+                <li class="iten"><a href="principal.html" class="nav-list">Início</a></li>
+                <li class="iten"><a href="" class="nav-list">Multimédia</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="radio.html">Rádio UnIA</a></li>
+                    </ul>
+                </li>
+                <li class="iten"><a href="sobre.html" class="nav-list">Quem somos</a></li>
+                <li class="iten"><a href="contacto.html" class="nav-list">Fala UnIA</a></li>
+                <li class="iten"><a href="ideias.html" class="nav-list">Ideias unia</a></li>
+                <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-list">Secretaria</a></li>
+               <!--   <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-list"><span class="material-icons">person</span>Iniciar Sessão</a></li>-->
+        </ul>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav> 
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="iten"><a href="principal.html" class="nav-link">Início</a></li>
+            <li class="iten"><a href="videos.html" class="nav-link">Vídeos</a></li>
+            <li class="iten"><a href="radio.html" class="nav-link">Rádio UnIA</a></li>
+            <li class="iten"><a href="sobre.html" class="nav-link">Quem somos</a></li>
+            <li class="iten"><a href="contacto.html" class="nav-link">Fala UnIA</a></li>
+            <li class="iten"><a href="ideias.html" class="nav-link">Ideias unia</a></li>
+            <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-link">Secretaria</a></li>
+            <!--  <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-link" id="entrar"><span class="material-icons">person</span>Iniciar Sessão</a></li>-->
+    </ul>
+    </div>
+    
+    <!-- destaque lateral -->
+
+  <div class="corpo">
+        
+        <div class="destaque">
+
+            <a href="politica.html">
+                <div class="noticia-destaque">
+                    <img src="img/aluns.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Política">
+                    <h3>Presidente da República tem luz verde para alterar salários da Função Pública</h3>
+                </div>
+            </a>
+
+            <a href="desporto.html">
+                <div class="noticia-destaque">
+                    <img src="img/aluns.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Desporto">
+                    <h3>Angola vence Níger por 1-0 e qualifica-se para a CAN'2025</h3>
+                </div>
+            </a>
+
+            <a href="cultura.html">
+                <div class="noticia-destaque">
+                    <img src="img/aluns.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Cultura">
+                    <h3>Eddy Flow prepara lançamento do livro “Como Ser Agarrado em 2025”</h3>
+                </div>
+            </a>
+
+            <a href="sociedade.html">
+                <div class="noticia-destaque">
+                    <img src="img/isabel.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Sociedade">
+                    <h3>PGR justifica morosidade de processo de Isabel dos Santos com "complexidade"</h3>
+                </div>
+            </a>
+
+            <a href="entertenimento.html">
+                <div class="noticia-destaque">
+                    <img src="img/chab.webp" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Entertenimento">
+                    <h3>Morreu o kudurista Mano Chaba</h3>
+                </div>
+            </a>
+
+            <a href="mundo.html">
+                <div class="noticia-destaque">
+                    <img src="img/trunp.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Mundo">
+                    <h3>Trump autoriza prisão de imigrantes ilegais até em escolas e igrejas</h3>
+                </div>
+            </a>
+            <a href="mundo.html">
+                <div class="noticia-destaque">
+                    <img src="img/trunp.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Mundo">
+                    <h3>Trump autoriza prisão de imigrantes ilegais até em escolas e igrejas</h3>
+                </div>
+            </a>
+            <a href="mundo.html">
+                <div class="noticia-destaque">
+                    <img src="img/trunp.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Mundo">
+                    <h3>Trump autoriza prisão de imigrantes ilegais até em escolas e igrejas</h3>
+                </div>
+            </a>
+            <a href="mundo.html">
+                <div class="noticia-destaque">
+                    <img src="img/trunp.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Mundo">
+                    <h3>Trump autoriza prisão de imigrantes ilegais até em escolas e igrejas</h3>
+                </div>
+            </a>
+            <a href="mundo.html">
+                <div class="noticia-destaque">
+                    <img src="img/trunp.jpg" alt="" class="imagem-destaque"> <br>
+                    <input type="button" value="Mundo">
+                    <h3>Trump autoriza prisão de imigrantes ilegais até em escolas e igrejas</h3>
+                </div>
+            </a>
+        </div>
+
+      <!-- barra de pesquisa -->
+
+     <div class="area-de-pesquisa">
+        <input class="txt-pesquisar" type="search" placeholder="Pesquisar notícias" aria-label="Search">
+        <button class="bt-pesquisar">Pesquisar</button>
+    </div> 
+
+        <!-- noticias -->
+
+        <div class="feed">
+
+
+            <article class="noticia-feed">
+                <header>
+                    <h1>UnIA Prepara as condições para lançar mais de mil licenciados em 2025</h1>
+                    <img src="img/finalistas.jpg" alt="Jornalista Cláudio França apresenta notícias na SIC" class="imagem-feed" onclick="this.classList.toggle('zoom')">
+                    <div class="info-meta">
+                        <span><em>Fonte: Anônimo</em></span> | 
+                        <time datetime="2025-04-27">26 de setembro de 2025</time>
+                    </div>
+                </header>
+            
+                <section class="noticia-conteudo">
+                    <p><strong>As reações têm-se multiplicado nas redes sociais e são muitos aqueles que aplaudem o canal de notícias.</strong></p>
+            
+                    <p>O jornalista Luso-angolano Cláudio França "fez história" este sábado, 26 de setembro, ao estrear-se como pivô na SIC Notícias. O jovem conduziu os espaços informativos da manhã do canal de notícias, que está a ser fortemente elogiado nas redes sociais por ter apresentado um jornalista "negro com rastas".</p>
+            
+                    <p>Mariama Barbosa, uma das mais reputadas fashionistas do nosso país e comentadora do programa Passadeira Vermelha, foi um dos rostos conhecidos que fez questão de aplaudir o profissionalismo do canal e felicitar o jornalista.</p>
+            
+                </section>
+        
+                <footer class="acoes-feed">
+                    <div class="botoes-acoes">
+                        <button class="btn-curtir" onclick="curtir(this)">
+                            👍 <span class="like-count">0</span> <span class="label-curtidas">Curtidas</span>
+                          </button>
+                        <button class="btn-comentar" onclick="mostrarCaixaComentario(this)">💬 Comentar</button>
+                        <button class="btn-partilhar" onclick="partilhar()">🔗 Partilhar</button>
+                    </div>
+            
+                    <div class="caixa-comentario" style="display: none;">
+                        <textarea class="comentario-texto" placeholder="Escreva seu comentário..."></textarea>
+                        <button onclick="enviarComentario(this)">Enviar</button>
+                    </div>
+            
+                    <div class="comentarios-feed"></div>
+                </footer>
+                
+            </article>
+                        <hr>
+                        <article class="noticia-feed">
+                            <header>
+                                <h1>Jornalista Luso-angolano Cláudio França "faz história" ao estrear-se como pivô na SIC Notícias</h1>
+                                <img src="img/Claudio.jpg" alt="Jornalista Cláudio França apresenta notícias na SIC" class="imagem-feed" onclick="this.classList.toggle('zoom')">
+                                <div class="info-meta">
+                                    <span><em>Fonte: Anônimo</em></span> | 
+                                    <time datetime="2025-04-27">26 de setembro de 2025</time>
+                                </div>
+                            </header>
+                        
+                            <section class="noticia-conteudo">
+                                <p><strong>As reações têm-se multiplicado nas redes sociais e são muitos aqueles que aplaudem o canal de notícias.</strong></p>
+                        
+                                <p>O jornalista Luso-angolano Cláudio França "fez história" este sábado, 26 de setembro, ao estrear-se como pivô na SIC Notícias. O jovem conduziu os espaços informativos da manhã do canal de notícias, que está a ser fortemente elogiado nas redes sociais por ter apresentado um jornalista "negro com rastas".</p>
+                        
+                                <p>Mariama Barbosa, uma das mais reputadas fashionistas do nosso país e comentadora do programa Passadeira Vermelha, foi um dos rostos conhecidos que fez questão de aplaudir o profissionalismo do canal e felicitar o jornalista.</p>
+                    
+                            </section>
+                    
+                            <footer class="acoes-feed">
+                                <div class="botoes-acoes">
+                                    <button class="btn-curtir" onclick="curtir(this)">
+                                        👍 <span class="like-count">0</span> <span class="label-curtidas">Curtidas</span>
+                                      </button>
+                                    <button class="btn-comentar" onclick="mostrarCaixaComentario(this)">💬 Comentar</button>
+                                    <button class="btn-partilhar" onclick="partilhar()">🔗 Partilhar</button>
+                                </div>
+                        
+                                <div class="caixa-comentario" style="display: none;">
+                                    <textarea class="comentario-texto" placeholder="Escreva seu comentário..."></textarea>
+                                    <button onclick="enviarComentario(this)">Enviar</button>
+                                </div>
+                        
+                                <div class="comentarios-feed"></div>
+                            </footer>
+                            
+                        </article>
+            <hr>
+            <article class="noticia-feed">
+                <header>
+                    <h1>Jornalista Luso-angolano Cláudio França "faz história" ao estrear-se como pivô na SIC Notícias</h1>
+                    <img src="img/Claudio.jpg" alt="Jornalista Cláudio França apresenta notícias na SIC" class="imagem-feed" onclick="this.classList.toggle('zoom')">
+                    <div class="info-meta">
+                        <span><em>Fonte: Anônimo</em></span> | 
+                        <time datetime="2025-04-27">26 de setembro de 2025</time>
+                    </div>
+                </header>
+            
+                <section class="noticia-conteudo">
+                    <p><strong>As reações têm-se multiplicado nas redes sociais e são muitos aqueles que aplaudem o canal de notícias.</strong></p>
+            
+                    <p>O jornalista Luso-angolano Cláudio França "fez história" este sábado, 26 de setembro, ao estrear-se como pivô na SIC Notícias. O jovem conduziu os espaços informativos da manhã do canal de notícias, que está a ser fortemente elogiado nas redes sociais por ter apresentado um jornalista "negro com rastas".</p>
+            
+                    <p>Mariama Barbosa, uma das mais reputadas fashionistas do nosso país e comentadora do programa Passadeira Vermelha, foi um dos rostos conhecidos que fez questão de aplaudir o profissionalismo do canal e felicitar o jornalista.</p>
+            
+                </section>
+        
+                <footer class="acoes-feed">
+                    <div class="botoes-acoes">
+                        <button class="btn-curtir" onclick="curtir(this)">
+                            👍 <span class="like-count">0</span> <span class="label-curtidas">Curtidas</span>
+                          </button>
+                        <button class="btn-comentar" onclick="mostrarCaixaComentario(this)">💬 Comentar</button>
+                        <button class="btn-partilhar" onclick="partilhar()">🔗 Partilhar</button>
+                    </div>
+            
+                    <div class="caixa-comentario" style="display: none;">
+                        <textarea class="comentario-texto" placeholder="Escreva seu comentário..."></textarea>
+                        <button onclick="enviarComentario(this)">Enviar</button>
+                    </div>
+            
+                    <div class="comentarios-feed"></div>
+                </footer>
+                
+            </article>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+  <footer>
+    
+    <div class="inf">
+        <ul class="local">
+            <h3>Localização</h3>
+            <li style="font-weight: bold;">Universidade Independente de Angola</li>
+            <li>Rua da Missão, Morro Bento II Luanda - Angola</li>
+        </ul>
+        <ul class="cont">
+            <h3>Contactos</h3>
+            <li><span class="material-icons">phone</span> (244) 930 225 361 / 997 904 796</li>
+            <li><span class="material-icons">mail</span> secretariavirtual@si.unia.ao</li>
+        </ul>
+        <ul class="hora">
+            <h3>Horários de Antendimento</h3>
+            <li>Segunda a Sexta-feira: 08:00 - 20:00</li>
+            <li>Sábado: 08:00 - 12:00</li>
+        </ul>
+    </div>
+    
+    <div class="red">
+        <a href="#"><img src="./img/f.png" alt="fb"></a>
+        <a href="#"><img src="./img/ins.png" alt="insta"></a>
+    </div>
+    <p class="dir">&COPY;2025 Portal de Notícias UnIA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>

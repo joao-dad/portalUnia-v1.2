@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #001F3F, #0074D9);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.geral {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.image img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.text h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.text a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e5b0ca;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.text a:hover {
+    background-color: #af8d9d;
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+    .text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .text h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    .text a{
+        padding: 13px 20px;
+        text-align: center;
+    }
+    .text a:hover{
+        transform: scale(1.03);
+    }
+}

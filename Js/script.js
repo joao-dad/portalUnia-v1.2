@@ -1,4 +1,21 @@
+/*index */
+document.addEventListener("DOMContentLoaded", () => {
+    const enterButton = document.querySelector(".text a");
 
+    enterButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        enterButton.textContent = "Entrando...";
+        enterButton.style.pointerEvents = "none";
+
+        // Simula carregamento
+        setTimeout(() => {
+            window.location.href = "principal.html"; // página principal do portal
+        }, 1500);
+    });
+});
+
+
+/*Slide (cabeçalho) */
     const carousel = document.getElementById('carousel');
     const dots = document.querySelectorAll('.dot');
     let currentIndex = 0;
@@ -126,6 +143,5 @@ function adicionarComentarioNaTela(noticia, comentario) {
     novoComentario.innerText = "💬 " + comentario;
     comentariosDiv.appendChild(novoComentario);
 }
-
 
 
