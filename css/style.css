@@ -426,7 +426,11 @@ body{
 }
 
 .noticia-feed .imagem-feed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    height: 460px;
 } 
 
 hr{
@@ -450,7 +454,8 @@ hr{
 .noticia-feed h1{
     margin-bottom: 15px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 30px;
+    text-align: justify;
 }
 
 .noticia-feed span{
@@ -464,6 +469,7 @@ hr{
     font-size: 12pt;
     font-family: time new roma;
     text-align: justify;
+    margin-bottom: 5px;
 }
 
 .noticia-feed a{

@@ -10,16 +10,27 @@
     <title>PNU - Sobre</title>
 
     <style>
+
+      body, p {
+      font-family: 'Roboto', sans-serif;
+    }
+        h1, h2, h3 {
+      font-family: 'Merriweather Sans', sans-serif;
+    }
         /*Sobre*/
 
 .sobre-container {
+  width: 100%;
   display: flex;
+  gap: 20px;
   padding: 20px;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: #f9f9f9;
 }
 
+.sobre-descricao{
+  width: 50%;
+}
 .sobre-descricao h1 {
   font-size: 30px;
   color: #444;
@@ -28,7 +39,7 @@
 }
 
 .sobre-descricao p {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.8;
   color: #555;
   text-align: justify;
@@ -36,6 +47,7 @@
 
 .criador {
   text-align: center;
+  width: 50%;
 }
 
 .criador h1 {
@@ -70,15 +82,25 @@
   .sobre-container{
     flex-direction: column;
     margin-top: 10px;
+    
   }
   .sobre-descricao{
     margin-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
   }
   .sobre-descricao h1{
     font-size: 20px;
   }
   .sobre-container p{
     font-size: 13px;
+  }
+  .criador{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .criador .imagem-feed{
+    width: 280px;
   }
   .criador h1{
     font-size: 20px;
@@ -123,6 +145,8 @@
     <nav class="navBar">
         <ul class="menu">
                 <li class="iten"><a href="principal.html" class="nav-list">Início</a></li>
+                <li class="iten"><a href="contacto.html" class="nav-list">Fala UnIA</a></li>
+                <li class="iten"><a href="ideias.html" class="nav-list">Ideias unia</a></li>
                 <li class="iten"><a href="" class="nav-list">Multimédia</a>
                     <ul class="submenu">
                         <li><a href="videos.html">Vídeos</a></li>
@@ -130,8 +154,6 @@
                     </ul>
                 </li>
                 <li class="iten"><a href="sobre.html" class="nav-list">Quem somos</a></li>
-                <li class="iten"><a href="contacto.html" class="nav-list">Fala UnIA</a></li>
-                <li class="iten"><a href="ideias.html" class="nav-list">Ideias unia</a></li>
                 <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-list">Secretaria</a></li>
                <!--   <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-list"><span class="material-icons">person</span>Iniciar Sessão</a></li>-->
         </ul>
@@ -144,13 +166,13 @@
     <div class="mobile-menu">
         <ul>
             <li class="iten"><a href="principal.html" class="nav-link">Início</a></li>
+            <li class="iten"><a href="contacto.html" class="nav-link">Fala UnIA</a></li>
+            <li class="iten"><a href="ideias.html" class="nav-link">Ideias unia</a></li>
             <li class="iten"><a href="videos.html" class="nav-link">Vídeos</a></li>
             <li class="iten"><a href="radio.html" class="nav-link">Rádio UnIA</a></li>
             <li class="iten"><a href="sobre.html" class="nav-link">Quem somos</a></li>
-            <li class="iten"><a href="contacto.html" class="nav-link">Fala UnIA</a></li>
-            <li class="iten"><a href="ideias.html" class="nav-link">Ideias unia</a></li>
             <li class="iten"><a href="http://secretaria.unia.ao/" target="_blank" class="nav-link">Secretaria</a></li>
-          <!--    <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-link" id="entrar"><span class="material-icons">person</span>Iniciar Sessão</a></li>-->
+            <!--  <li class="iten"><a href="login.html" style="color: #e5b0ca;" class="nav-link" id="entrar"><span class="material-icons">person</span>Iniciar Sessão</a></li>-->
     </ul>
     </div>
 
@@ -158,11 +180,11 @@
         <div class="sobre-descricao">
           <h1>Portal de Notícias UnIA</h1>
           <p>
-            O <strong>"É Actual"</strong> é um portal de notícias dedicado a trazer informações
-            atualizadas, relevantes e diversificadas sobre política, desporto,
-            cultura, sociedade, entretenimento e acontecimentos globais. Nossa missão
-            é informar de forma imparcial e precisa, conectando nossos leitores ao
-            que acontece no mundo.
+           O Portal de Notícias UNIA é o espaço oficial de comunicação e divulgação de conteúdos informativos, académicos e culturais da <strong>Universidade Independente de Angola (UNIA)</strong>. Criado com o propósito de conectar estudantes, docentes, investigadores e a sociedade em geral, o portal funciona como uma ponte entre a vida universitária e o mundo. <br>
+
+            O portal foi idealizado para reunir notícias, eventos, artigos científicos, projetos estudantis, entrevistas, livros publicados, entre outros conteúdos relevantes que nascem dentro da nossa universidade. <br>
+
+            Com um design moderno, acessível e responsivo, o Portal de Notícias UNIA reafirma o compromisso da universidade com a transparência, inovação e excelência educativa.
           </p>
         </div>
       
@@ -170,10 +192,7 @@
           <h1>Sobre o Criador</h1>
           <img src="./img/aluns.jpg" alt="Foto do criador do site" class="imagem-feed" onclick="this.classList.toggle('zoom')" >
           <p>
-            Este site foi criado e desenvolvido por <strong>João Silva</strong>, Desenvolvedor Web, apaixonado por conectar pessoas às informações mais
-            importantes do dia a dia. Com ampla experiência no setor digital e um
-            olhar atento às tendências globais, João criou este portal com o
-            propósito de entregar notícias de qualidade e integridade. <a href="https://www.linkedin.com/in/joão-card-silva" target="_blank">Saber mais sobre o Criador...</a>
+            Este portal foi criado e desenvolvido por pelos estudantes finalistas do curso de <strong>Informática de Gestão de Empresas</strong>, liderada por <strong>João Silva</strong> e supervisionada pelo <strong>Eng. Campos Delgado</strong>. <br> <a href="https://www.linkedin.com/in/joão-card-silva" target="_blank">Saber mais sobre o Criador...</a>
           </p>
         </div>
       </section>
