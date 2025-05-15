@@ -205,95 +205,95 @@
             <!--  <h1>Fala UnIA</h1>-->
             <h3>A sua crítica é importante para o bom funcionamento da nossa e vossa UnIA</h3>
 
-            <form id="cont-form" method="POST">
-            <label>Nome</label>
-            <input type="text" name="Nome" placeholder="Digite o seu Nome" required>
-            
-            <div class="form-container">
-                <label for="tipo">Quem és:</label>
-                <select id="tipo" name="tipo" onchange="mostrarCampos()">
-                <option value="">Selecione uma opção</option>
-                <option value="estudante">Estudante</option>
-                <option value="visitante">Visitante</option>
-                </select>
-            
-                <div id="campos-estudante" class="hidden">
-
-                    <label>Nº Estudante</label>
-                    <input type="number" name="num_estudante" placeholder="Nº estudante" required>
-                    <label>Ano</label>
-                    <input type="number" name="ano" placeholder="Digite o ano">
-                    <label for="faculdade">Faculdade</label>
-                    <select id="faculdade" name="faculdade" required>
-                    <option value="">Selecionar</option>
-                    <option value="FBA">Faculdade de Belas Artes</option>
-                    <option value="FCS">Faculdade de Ciências Sociais</option>
-                    <option value="FCET">Faculdade de Ciências de Engenharia e Tecnologia</option>
-                    <option value="FD">Faculdade de Direito</option>
-                    <option value="FEG">Faculdade de Economia e Gestão</option>
+            <form id="cont-form">
+                <label>Nome</label>
+                <input type="text" name="Nome" placeholder="Digite o seu Nome" required>
+                
+                <div class="form-container">
+                    <label for="tipo">Quem és:</label>
+                    <select id="tipo" name="tipo" onchange="mostrarCampos()">
+                    <option value="">Selecione uma opção</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="visitante">Visitante</option>
                     </select>
+                
+                    <div id="campos-estudante" class="hidden">
 
-                    <label for="curso">Curso</label>
-                    <select id="curso" name="curso" required>
-                    <option value="">Selecionar</option>
-                    <option value="ALA">Administração Local e Autárquica</option>
-                    <option value="AU">Arquitectura e Urbanismo</option>
-                    <option value="CC">Ciências da Comunicação</option>
-                    <option value="CA">Contabilidade e Auditoria</option>
-                    <option value="C">Cinema</option>
-                    <option value="D">Design</option>
-                    <option value="Dir">Direito</option>
-                    <option value="Eco">Economia</option>
-                    <option value="EC">Engenharia Civil</option>
-                    <option value="ERNA">Engenharia dos Recursos Naturais e Ambiente</option>
-                    <option value="EET">Engenharia Electrotécnica e Telecomunicações</option>
-                    <option value="EGI">Engenharia e Gestão Industrial</option>
-                    <option value="EI">Engenharia Informática</option>
-                    <option value="FC">Finanças e Contabilidade</option>
-                    <option value="GM">Gestão e Marketing</option>
-                    <option value="GRH">Gestão de Recursos Humanos</option>
-                    <option value="IGE">Informática de Gestão de Empresas</option>
-                    <option value="PLLP">Portugês e Literatura em Límgua Portuguesa</option>
-                    <option value="Psic">Psicologia</option>
-                    <option value="RI">Relações Internacionais</option>
-                    <option value="Soc">Sociologia</option>
-                    <option value="TGH">Turismo e Gestão Hoteleira</option>
-                    </select>
+                        <label>Nº Estudante</label>
+                        <input type="number" name="num_estudante" placeholder="Nº estudante" required>
+                        <label>Ano</label>
+                        <input type="number" name="ano" placeholder="Digite o ano">
+                        <label for="faculdade">Faculdade</label>
+                        <select id="faculdade" name="faculdade" required>
+                        <option value="">Selecionar</option>
+                        <option value="FBA">Faculdade de Belas Artes</option>
+                        <option value="FCS">Faculdade de Ciências Sociais</option>
+                        <option value="FCET">Faculdade de Ciências de Engenharia e Tecnologia</option>
+                        <option value="FD">Faculdade de Direito</option>
+                        <option value="FEG">Faculdade de Economia e Gestão</option>
+                        </select>
 
-                    <label for="areas">Qual a área de reclamação</label>
-                    <select id="areas" name="areas" required>
-                    <option value="">Selecionar</option>
-                    <option value="DAAC">Dir. Assuntos Acadêmicos</option>
-                    <option value="DAF">Dir. Assusntos Financeiros</option>
-                    <option value="DF">Dir. Faculdades</option>
-                    <option value="AE">Associação dos Estudantes</option>
-                    <option value="Sec">Secretaria</option>
-                    <option value="RH">Recursos Humanos</option>
-                    </select>
-                </div>
-            
-                <div id="campos-visitante" class="hidden">
-            
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                        <label for="curso">Curso</label>
+                        <select id="curso" name="curso" required>
+                        <option value="">Selecionar</option>
+                        <option value="ALA">Administração Local e Autárquica</option>
+                        <option value="AU">Arquitectura e Urbanismo</option>
+                        <option value="CC">Ciências da Comunicação</option>
+                        <option value="CA">Contabilidade e Auditoria</option>
+                        <option value="C">Cinema</option>
+                        <option value="D">Design</option>
+                        <option value="Dir">Direito</option>
+                        <option value="Eco">Economia</option>
+                        <option value="EC">Engenharia Civil</option>
+                        <option value="ERNA">Engenharia dos Recursos Naturais e Ambiente</option>
+                        <option value="EET">Engenharia Electrotécnica e Telecomunicações</option>
+                        <option value="EGI">Engenharia e Gestão Industrial</option>
+                        <option value="EI">Engenharia Informática</option>
+                        <option value="FC">Finanças e Contabilidade</option>
+                        <option value="GM">Gestão e Marketing</option>
+                        <option value="GRH">Gestão de Recursos Humanos</option>
+                        <option value="IGE">Informática de Gestão de Empresas</option>
+                        <option value="PLLP">Portugês e Literatura em Límgua Portuguesa</option>
+                        <option value="Psic">Psicologia</option>
+                        <option value="RI">Relações Internacionais</option>
+                        <option value="Soc">Sociologia</option>
+                        <option value="TGH">Turismo e Gestão Hoteleira</option>
+                        </select>
 
-                    <label for="areas">Qual a área de reclamação</label>
-                    <select id="areas" name="areas" required>
-                    <option value="">Selecionar</option>
-                    <option value="DAAC">Dir. Assuntos Acadêmicos</option>
-                    <option value="DAF">Dir. Assusntos Financeiros</option>
-                    <option value="DF">Dir. Faculdades</option>
-                    <option value="AE">Associação dos Estudantes</option>
-                    <option value="Sec">Secretaria</option>
-                    <option value="RH">Recursos Humanos</option>
-                    </select>
-                </div>
+                        <label for="areas">Qual a área de reclamação</label>
+                        <select id="areas" name="areas" required>
+                        <option value="">Selecionar</option>
+                        <option value="DAAC">Dir. Assuntos Acadêmicos</option>
+                        <option value="DAF">Dir. Assusntos Financeiros</option>
+                        <option value="DF">Dir. Faculdades</option>
+                        <option value="AE">Associação dos Estudantes</option>
+                        <option value="Sec">Secretaria</option>
+                        <option value="RH">Recursos Humanos</option>
+                        </select>
+                    </div>
+                
+                    <div id="campos-visitante" class="hidden">
+                
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
 
-            
-            <label>Deixe a sua Preocupação</label>
-            <textarea name="mensagem" id="" rows="5" placeholder="Deixe a sua mensagem" required></textarea>
+                        <label for="areas">Qual a área de reclamação</label>
+                        <select id="areas" name="areas" required>
+                        <option value="">Selecionar</option>
+                        <option value="DAAC">Dir. Assuntos Acadêmicos</option>
+                        <option value="DAF">Dir. Assusntos Financeiros</option>
+                        <option value="DF">Dir. Faculdades</option>
+                        <option value="AE">Associação dos Estudantes</option>
+                        <option value="Sec">Secretaria</option>
+                        <option value="RH">Recursos Humanos</option>
+                        </select>
+                    </div>
 
-            <button type="submit">Enviar</button>
+                
+                <label>Deixe a sua Preocupação</label>
+                <textarea name="mensagem" id="" rows="5" placeholder="Deixe a sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
 
             </form>   
         </div>
@@ -327,6 +327,7 @@
     <p class="dir">&COPY;2025 Portal de Notícias UnIA. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="./Js/script.js"></script>
+    <script src="./Js/script2.js"></script>
+
 </body>
 </html>

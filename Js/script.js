@@ -1,19 +1,3 @@
-/*index */
-document.addEventListener("DOMContentLoaded", () => {
-    const enterButton = document.querySelector(".text a");
-
-    enterButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        enterButton.textContent = "Entrando...";
-        enterButton.style.pointerEvents = "none";
-
-        // Simula carregamento
-        setTimeout(() => {
-            window.location.href = "principal.html"; // página principal do portal
-        }, 1500);
-    });
-});
-
 
 /*Slide (cabeçalho) */
     const carousel = document.getElementById('carousel');
@@ -21,12 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentIndex = 0;
     const totalSlides = dots.length;
 
-    function showSlide(index) {
-        carousel.style.transform = 'translateX(-${index * 100}%)';
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[index].classList.add('active');
-        currentIndex = index;
-    }
+function showSlide(index) {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+    currentIndex = index;
+}
+
 
     function autoSlide(){
         let nextIndex = (currentIndex + 1) % totalSlides;
@@ -76,12 +61,26 @@ function mostrarCampos() {
     }
   }
 
-  /*curtir, comentar e partilhar*/
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Entrar no portal
+    const enterButton = document.querySelector(".text a");
 
+    if (enterButton) {
+        enterButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            enterButton.textContent = "Entrando...";
+            enterButton.style.pointerEvents = "none";
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Carregar likes e comentários para todas as notícias
+            setTimeout(() => {
+                window.location.href = "principal.html";
+            }, 1500);
+        });
+    }
+
+    
+
+    // Comentários e likes
     document.querySelectorAll('.noticia-feed').forEach((noticia, index) => {
         let likes = localStorage.getItem(`likes-${index}`) || 0;
         noticia.querySelector('.like-count').innerText = likes;
@@ -92,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
 
 function curtir(botao) {
     const noticia = botao.closest('.noticia-feed');
@@ -143,5 +143,4 @@ function adicionarComentarioNaTela(noticia, comentario) {
     novoComentario.innerText = "💬 " + comentario;
     comentariosDiv.appendChild(novoComentario);
 }
-
 
