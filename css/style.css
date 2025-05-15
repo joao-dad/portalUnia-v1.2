@@ -21,10 +21,11 @@ body{
 
 @media screen and (max-width: 768px) {
     html, body{
-    background: url(../img/unia-logo.png);
+    /*background: url(../img/unia-logo.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background-color: white;
     }
 }
 
